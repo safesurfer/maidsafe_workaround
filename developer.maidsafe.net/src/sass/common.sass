@@ -1,0 +1,76 @@
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+body
+  font-family: 'Open Sans'
+
+header
+  position: relative
+  height: $header-height
+  padding: 16px
+  background-color: #fafafa7a
+  +clearfix()
+  .brand-logo
+    padding: 16px
+    position: absolute
+    top: 0
+    left: 0
+    .images
+      width: $brand-logo-height
+      height: $brand-logo-height
+      display: block
+      float: left
+      // background-color: #eee
+      background-image: url('../../public/images/logo_dark.svg')
+      background-repeat: no-repeat
+      background-size: contain
+      background-position: center
+    .split
+      width: 2px
+      height: 32px
+      display: block
+      border: 1px solid #606b7a
+      float: left
+      margin: 9px 10px
+    .desc
+      line-height: $brand-logo-height
+      display: block
+      float: left
+      font-size: 16px
+      font-weight: 600
+      color: #8b8b8b
+  nav
+    text-align: center
+    a
+      color: #616a78
+      text-decoration: none
+      font-size: 16px
+      font-weight: 600
+      margin: 0 25px
+      line-height: $header-height - 32px
+  .opts
+    position: absolute
+    height: 100%
+    top: 0
+    right: 0
+    padding: 16px
+    .opt
+      width: 30px
+      height: 30px
+      position: relative
+      top: 50%
+      transform: translate(0, -50%)
+      background-position: center
+      background-repeat: no-repeat
+      background-size: contain
+      float: left
+      margin-left: 16px
+      a
+        display: block
+        width: 100%
+        height: 30px
+      &.community
+        background-image: url('../../public/images/community_forum.svg')
+
